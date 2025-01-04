@@ -1,0 +1,8 @@
+const accountId = 23456
+let accountEmail = "sumit@google.com"
+var accountPassword = "21233"
+accountCity = "Jaipur"
+
+//accountId = 2// not allowed
+
+console.log("accountId");

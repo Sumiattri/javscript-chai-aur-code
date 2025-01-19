@@ -23,3 +23,4 @@ console.log(typeof"Sumit");
 console.log(typeof age);
 console.log(null);      //object
 console.log (undefined); //undefined
+console.log(typeof state);

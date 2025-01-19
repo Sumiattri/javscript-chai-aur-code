@@ -12,6 +12,12 @@ let valueInNumber = Number(score)
 // "33abc" => NaN
 //  true => 1; false => 0
 
+//let hitesh = false
+//let valueofhitesh = Number(hitesh)
+//console.log(typeof valueofhitesh);
+//console.log(valueofhitesh);
+
+
 let isLoggedIn = "hitesh"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)

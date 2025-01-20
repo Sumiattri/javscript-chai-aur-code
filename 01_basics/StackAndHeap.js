@@ -7,8 +7,8 @@ let anotherName = myYoutubeName
 
 anotherName = "SumitAttri"
 
-console.log(myYoutubeName);
-console.log(anotherName);
+console.log(myYoutubeName);  // panther777
+console.log(anotherName);    // SumitAttri
 
 
 let userOne = {
@@ -21,7 +21,7 @@ let userTwo = userOne
 
 userTwo.email = "attri@gmail"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log(userOne.email);  // attri@gmail
+console.log(userTwo.email);  // attri@gmail
 
 

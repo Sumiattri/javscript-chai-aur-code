@@ -2,10 +2,12 @@ const score = 400
 // console.log(score);
 
 const balance = new Number(100)
-// console.log(balance);
+ console.log(balance);
+ console.log(typeof balance);
+ 
 
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
+// console.log(balance.toString().length);  // conversion to string and then calculates length
+// console.log(balance.toFixed(1)); //100.0
 
 const otherNumber = 123.8966
 

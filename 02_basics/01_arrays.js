@@ -6,7 +6,7 @@ const myHeors = ["shaktiman", "naagraj"]
 const myArr2 = new Array(1, 2, 3, 4)
 //console.log(typeof myArr2);  //object
 
-// console.log(myArr[1]);
+// console.log(myArr[1]); // 0
 
 // Array methods
 
@@ -17,8 +17,8 @@ const myArr2 = new Array(1, 2, 3, 4)
 // myArr.unshift(9)
 // myArr.shift()
 
-// console.log(myArr.includes(9));
-// console.log(myArr.indexOf(3));
+// console.log(myArr.includes(9));  //false
+ console.log(myArr.indexOf(3));
 
 // const newArr = myArr.join()
 

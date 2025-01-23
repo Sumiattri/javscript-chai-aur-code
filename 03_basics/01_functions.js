@@ -22,9 +22,9 @@ function addTwoNumbers(number1, number2){
     return number1 + number2
 }
 
-const result = addTwoNumbers(3, 5)
+const result = addTwoNumbers(3, 5);
 
-// console.log("Result: ", result);
+console.log(`Result is ${result}`);
 
 
 function loginUserMessage(username = "sam"){
@@ -35,7 +35,7 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage())
 // console.log(loginUserMessage("hitesh"))
 
 
@@ -58,8 +58,8 @@ function handleObject(anyobject){
 const a = handleObject(user)
 console.log(a);
 
-
 // handleObject(user)
+
 handleObject({
     username: "sam",
     prices: 399

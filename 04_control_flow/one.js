@@ -23,7 +23,7 @@ const temperature = 41
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");  //if one line of code, no need of curly braces// not a good practice
+// if (balance > 500) console.log("test"),console.log("test2");  //if one line of code, no need of curly braces // not a good practice
 
 // if (balance < 500) {
 //     console.log("less than 500");
@@ -50,3 +50,7 @@ if (userLoggedIn && debitCard && 2==3) {
 if (loggedInFromGoogle || loggedInFromEmail) {
     console.log("User logged in");
 }
+
+
+
+

@@ -41,3 +41,6 @@ console.log(val1);
 
 const iceTeaPrice = 100
 iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
+
+let SumitAge = 20;
+SumitAge <=25 ? console.log("Sumit is young") : console.log("Sumit is old");

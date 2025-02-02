@@ -25,10 +25,11 @@ const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
 // const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+//  const obj3 = Object.assign({}, obj1, obj2, obj4)
 
 const obj3 = {...obj1, ...obj2}
  console.log(obj3);
+ 
 
 
 const users = [
@@ -48,11 +49,11 @@ const users = [
 
 console.log(users[1].email)
 
-// console.log(tinderUser);
+console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+console.log(Object.keys(tinderUser)); //output: [ 'id', 'name', 'isLoggedIn' ]
+console.log(Object.values(tinderUser)); //  output: [ '123abc', 'Sammy', false ]
+console.log(Object.entries(tinderUser));  //output: [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 

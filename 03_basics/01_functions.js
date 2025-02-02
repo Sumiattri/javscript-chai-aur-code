@@ -8,7 +8,7 @@ function sayMyName(){
     console.log("H");
 }
 
-// sayMyName()
+//  sayMyName()
 
 // function addTwoNumbers(number1, number2){
 
@@ -39,7 +39,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){   // rest operator
     return num1
 }
 
@@ -64,6 +64,30 @@ handleObject({
     username: "sam",
     prices: 399
 })
+
+function greetUser({ name, age }) {                                 //You can destructure parameters in function definitions:
+    console.log(`Hello, ${name}! You are ${age} years old.`);  
+}
+
+const user1 = {
+    name: "Sumit",
+    age: 22,
+};
+
+greetUser(user1); // Output: Hello, Sumit! You are 22 years old.
+
+
+function greetUser({ name :hii, age :yoo }) {
+    console.log(`Hello, ${hii}! You are ${yoo} years old.`);
+  }
+  
+  const user2 = {
+    name: "Sumit",
+    age: 22,
+  };
+  
+  greetUser(user); // Output: Hello, Sumit! You are 22 years old.
+
 
 const myNewArray = [200, 400, 100, 600]
 

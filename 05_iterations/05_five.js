@@ -1,8 +1,19 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
-//     console.log(val);
-// } )
+
+/* .
+forEach() is a higher-order function used to iterate over arrays in JavaScript.
+   It executes a provided function once for each array element.
+   
+   array.forEach((element, index, array) => {
+   // Code to execute for each element
+   });
+
+ */
+
+coding.forEach( function (val){
+    console.log(val);               //this function insid forEach is called callback function and it does not have any name
+} )
 
 // coding.forEach( (item) => {
 //     console.log(item);

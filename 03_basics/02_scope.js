@@ -3,13 +3,13 @@ let a = 300
 if (true) {
     let a = 10
     const b = 20
-    // console.log("INNER: ", a);
+    console.log("INNER a: ", a);
     
 }
 
 
 
-//  console.log(a);
+ console.log(`Outer a : ${a}`);
 // console.log(b);
 // console.log(c);
 
@@ -27,7 +27,7 @@ function one(){
 
 }
 
-// one()
+one()
 
 if (true) {
     const username = "hitesh"
@@ -52,7 +52,7 @@ function addone(num){
 
 
 
- addTwo(5)
+//  addTwo(5)
 const addTwo = function(num){
     return num + 2
 }

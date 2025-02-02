@@ -21,16 +21,15 @@ const JsUser = {
 // console.log(JsUser.email)
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])
- //console.log(JsUser[mySym])
-//  console.log(JsUser[Symbol("key1")]);
-//  console.log(typeof JsUser[mySym]);
+// console.log(JsUser[mySym])
+// console.log(typeof JsUser[mySym]);
  
  
 
 JsUser.email = "hitesh@chatgpt.com"
 // Object.freeze(JsUser)
 JsUser.email = "hitesh@microsoft.com"
- //console.log(JsUser);
+//  console.log(JsUser);
 
 // JsUser.no = 10
 // console.log(JsUser.no);
@@ -51,4 +50,4 @@ console.log(JsUser.greeting());
 console.log(JsUser.greetingTwo());
 
 
-//console.log(JsUser);
+console.log(JsUser);

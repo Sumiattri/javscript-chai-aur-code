@@ -27,9 +27,9 @@ const JsUser = {
  
 
 JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
+Object.freeze(JsUser.name)
 JsUser.email = "hitesh@microsoft.com"
-//  console.log(JsUser);
+//  console.log(JsUser.email);
 
 // JsUser.no = 10
 // console.log(JsUser.no);

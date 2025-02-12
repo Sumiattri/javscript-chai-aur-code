@@ -5,7 +5,20 @@
 // Similar language called typescript is there which is statically typed language
 
 
-//  Primitive
+/* 
+     Primitive DATA TYPES
+     Also Called  'Call by value':
+        When primitive data types (like number, string, boolean, etc.) are passed to a function, a copy of the value is created. Changes inside the function do not affect the original variable.)
+            
+            let a = 10;
+            function modify(x) {
+            x = x + 5; // Changing the copy
+            console.log("Inside function:", x); // 15
+            }
+            modify(a);
+            console.log("Outside function:", a); // 10 (Original remains unchanged)
+
+*/
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
@@ -25,7 +38,20 @@ console.log(id === anotherId);
 
 
 
-// Reference (Non primitive)
+/* 
+    Reference (Non primitive)
+    Also Called 'Call by reference':
+        When a reference data type (like array, object, function, etc.) is passed to a function, the address of the value is passed. Changes inside the function affect the original variable.
+        
+            let arr = [1, 2, 3];
+            function modify(x) {
+            x.push(4); // Changing the original
+            console.log("Inside function:", x); // [1, 2, 3, 4]
+            }
+            modify(arr);
+            console.log("Outside function:", arr); // [1, 2, 3, 4] (Original is changed)
+
+*/
 
 // Array, Objects, Functions
 

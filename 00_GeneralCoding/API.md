@@ -84,6 +84,8 @@ How to Decode & Understand an API Response
 	•	Postman (best tool for testing APIs).
 	•	cURL (command-line tool).
 
+## Some APIs require headers (like Accept: application/json) or must be accessed via a proper HTTP client (Postman, cURL, or a programming language like Python or JavaScript).
+
 Quick Summary
 
 Concept	Explanation
@@ -134,3 +136,109 @@ So, APIs act as intermediaries between you and the database or service, simplify
 
 
 ## github api:    curl -H "Authorization: Bearer YOUR_GITHUB_TOKEN" https://api.github.com/user => CLI command
+
+## Does API request similar to http request
+
+Is an HTTP Request the Same as an API Request?
+
+👉 Short Answer: An API request is a type of HTTP request, but not all HTTP requests are API requests.
+
+1️⃣ What is an HTTP Request?
+
+An HTTP request is any communication sent from a client (like a browser or app) to a server over the Hypertext Transfer Protocol (HTTP/HTTPS).
+
+📌 Examples of HTTP Requests:
+	•	Visiting a website:
+	•	When you type https://github.com in your browser, your browser sends an HTTP request to GitHub’s web server, which responds with an HTML page.
+	•	Downloading an image:
+	•	Your browser requests https://example.com/image.png, and the server returns the image file.
+
+🔹 Types of HTTP Requests (Methods):
+	•	GET – Fetch data (e.g., view a webpage, download an image).
+	•	POST – Send data (e.g., submit a form, create a GitHub issue).
+	•	PUT – Update existing data (e.g., edit a GitHub profile).
+	•	DELETE – Remove data (e.g., delete a repo).
+
+2️⃣ What is an API Request?
+
+An API request is a special type of HTTP request made to an API endpoint (like api.github.com). Instead of returning a web page or an image, the server responds with structured data (usually JSON or XML).
+
+📌 Example of an API Request:
+
+curl https://api.github.com/users/sumitattri
+
+	•	This sends an HTTP GET request to GitHub’s API server.
+	•	The API responds with JSON data about the user sumitattri.
+
+📌 Example Response (JSON):
+
+{
+  "login": "sumitattri",
+  "id": 68212695,
+  "public_repos": 3,
+  "followers": 2
+}
+
+💡 Unlike normal HTTP requests (which return webpages), API requests return raw data for applications to process.
+
+3️⃣ Key Differences Between HTTP Requests and API Requests
+
+Feature					HTTP Request (General)	                API Request
+purposes				Fetch websites, images, etc.			Retrieve/send structured data (JSON, XML)
+Example 				URL	https://github.com					https://api.github.com/users/sumitattri
+Response Type			HTML, images, videos					JSON, XML
+Use Creates 			Browsing the web						Fetching data programmatically
+Authentication			Usually not needed						Often requires API keys/tokens
+   
+4️⃣ Are API Requests Always HTTP Requests?
+
+🔸 Most modern APIs use HTTP (REST APIs).
+🔸 But some APIs use other protocols like:
+	•	WebSockets (real-time communication, e.g., chat apps).
+	•	GraphQL (alternative to REST, e.g., GitHub GraphQL API).
+	•	gRPC (efficient API communication, used by Google services).
+
+💡 So, while most API requests use HTTP, not all APIs rely on HTTP.
+
+🔹 TL;DR
+
+✅ An API request is a type of HTTP request that retrieves or sends structured data from an API server.
+✅ Not all HTTP requests are API requests (e.g., loading a webpage is an HTTP request but not an API request).
+✅ API requests are mostly used for data exchange, while normal HTTP requests load websites, images, etc.
+
+Let me know if you need more details! 🚀
+
+
+## API ENDPOINT
+
+An API endpoint is a specific URL where an API receives requests and sends responses. It represents a particular function or resource within an API.
+
+Key Concepts:
+	1.	API (Application Programming Interface): A way for different software systems to communicate.
+	2.	Endpoint: A URL that a client (frontend, app, or another system) interacts with to request or send data.
+	3.	Request Methods: Common HTTP methods used with API endpoints:
+	•	GET: Retrieve data
+	•	POST: Send new data
+	•	PUT: Update existing data
+	•	DELETE: Remove data
+
+Example of an API Endpoint:
+
+1. REST API Example
+
+If a website has a user system, an API endpoint might look like this:
+	•	https://example.com/api/users → Retrieves a list of users (GET)
+	•	https://example.com/api/users/1 → Retrieves user with ID 1 (GET)
+	•	https://example.com/api/users → Creates a new user (POST)
+
+2. JSON Response Example
+
+A GET request to https://example.com/api/users/1 might return:
+
+{
+    "id": 1,
+    "name": "Sumit Attri",
+    "email": "sumit@example.com"
+}
+
+Would you like to try making API calls using JavaScript or Postman?

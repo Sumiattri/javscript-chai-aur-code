@@ -100,3 +100,6 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 
 // promise.all
 // yes this is also available, kuch reading aap b kro.
+
+
+// sanket promoise pdf link adobe: https://acrobat.adobe.com/id/urn:aaid:sc:AP:d5ff045c-136b-4a7d-9eeb-46fc2408248b
